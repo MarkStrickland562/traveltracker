@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Travel Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class ="jumbotron">
+        <h1>Travel Tracker</h1>
+        <p>Fill out the form in order to log different places you've been!</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+          <h2>Make a Travel Log Entry:</h2>
+          <form id="new-log">
+            <div class="form-group">
+              <label for="new-location">Location Name</label>
+              <input type="text"  class="form-control" id="new-location">
+            </div>
+            <div class="form-group">
+              <label for="new-landmarks">Landmarks</label>
+              <input type="text"  class="form-control" id="new-landmarks">
+            </div>
+            <div class="form-group">
+              <label for="new-timeofyear">Best Time of Year</label>
+              <input type="text"  class="form-control" id="new-timeofyear">
+            </div>
+            <div class="form-group">
+              <label for="new-familyfriendly">Family-Friendly?</label>
+              <input type="text" class="form-control" id="new-familyfriendly">
+            </div>
+            <div class="form-group">
+              <label for="new-petfriendly">Pet-Friendly?</label>
+              <input type="text" class="form-control" id="new-petfriendly">
+            </div>
+            <div class="form-group">
+              <label for="new-notes">Notes</label>
+              <input type="text" class="form-control" id="new-notes">
+            </div>
+            <button type="submit" class="btn-primary">Add Destination</button>
+          </form>
+          <h2>Destinations:</h2>
+          <ul id="destinations">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-destination">
+            <p>Location: <span class="location"></span></p>
+            <p>Landmarks: <span class="landmarks"></span></p>
+            <p>Best Time of Year: <span class="timeOfYear"></span></p>
+            <p>Family-Friendly?: <span class="familyFriendly"></span></p>
+            <p>Pet-Friendly?: <span class="petFriendly"></span></p>
+            <p>Notes: <span class="notes"></span></p>
+            <div id="buttons">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
